@@ -8,7 +8,7 @@ h1.heading-h1 {
     color: $primary-paragraph-black;
 }
 
-@include breakpoint(large-desktop) {
+@include breakpoint(for-desktop-up) {
     h1.heading-h1 {
         font-size: 3.75rem;
         line-height: 4rem;
@@ -21,7 +21,7 @@ h2.heading-h2-24 {
     color: $primary-paragraph-black;
 }
 
-@include breakpoint(large-desktop) {
+@include breakpoint(for-desktop-up) {
     h2.heading-h2-24 {
         font-size: 1.875rem;
     }
@@ -32,7 +32,7 @@ h2.heading-h2--34 {
     font-weight: 700;
 }
 
-@include breakpoint(large-desktop) {
+@include breakpoint(for-desktop-up) {
     h2.heading-h2--34 {
         font-size: 3.75rem;
     }
@@ -69,11 +69,11 @@ h4.heading-h4-18 {
     color: $primary-paragraph-black;
 }
 
-@include breakpoint(large-desktop) {
+@include breakpoint(for-desktop-up) {
 
 }
 
-@include breakpoint(large-desktop) {
+@include breakpoint(for-desktop-up) {
     .paragraph-18 {
         font-size: 1.3125rem;
     }

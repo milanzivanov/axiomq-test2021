@@ -20,7 +20,13 @@ body {
     position: relative;
     padding: 0 1rem;
     z-index: 10;
-    background-color: #FFFFFF;
+    background-color: $white;
+}
+
+@include breakpoint(for-desktop-up) {
+    .container {
+        padding: 0;
+    }
 }
 
 .mobile-bg {
@@ -36,7 +42,7 @@ body {
     display: none;
 }
 
-@include breakpoint(large-desktop) {
+@include breakpoint(for-desktop-up) {
     .mobile-bg {
         display: none;
     }
@@ -64,7 +70,7 @@ body {
     align-items: center;
 }
 
-@include breakpoint(large-desktop) {
+@include breakpoint(for-desktop-up) {
     .hero-container {
         flex-direction: row;
     }
@@ -75,13 +81,13 @@ body {
     text-align: center;
 }
 
-@include breakpoint(large-desktop) {
+@include breakpoint(for-desktop-up) {
     .hero-container__item {
         text-align: left;
     }
 }
 
-@include breakpoint(large-desktop) {
+@include breakpoint(for-desktop-up) {
     .hero-container__item--right {
         display: flex;
         justify-content: right;
@@ -103,7 +109,7 @@ h1.heading-h1::first-line {
     border-top: 1px solid #c4c4c4;
 }
 
-@include breakpoint(large-desktop) {
+@include breakpoint(for-desktop-up) {
     .earners-container {
         flex-direction: row;
     }
@@ -132,7 +138,7 @@ h1.heading-h1::first-line {
     text-align: center;
     font-family: 'Manrope', sans-serif;
 }
-@include breakpoint(large-desktop) {
+@include breakpoint(for-desktop-up) {
     .wondering-box {
         padding-bottom: 5.125rem;
     }
@@ -144,7 +150,7 @@ h1.heading-h1::first-line {
 }
 
 
-@include breakpoint(large-desktop) {
+@include breakpoint(for-desktop-up) {
     .wondering-box__steps {
         display: flex;
         border-bottom: 1px solid #c4c4c4;
@@ -155,7 +161,7 @@ h1.heading-h1::first-line {
     display: flex;
 }
 
-@include breakpoint(large-desktop) {
+@include breakpoint(for-desktop-up) {
     .wondering-box__steps--item {
         padding-right: 1.5rem;
     }
@@ -192,7 +198,7 @@ h1.heading-h1::first-line {
     padding: 1.5rem 0 0 .5rem;
 }
 
-@include breakpoint(large-desktop) {
+@include breakpoint(for-desktop-up) {
     .tools-box__flex {
         display: flex;
         flex-wrap: wrap;
@@ -287,7 +293,7 @@ h1.heading-h1::first-line {
     }
 }
 
-@include breakpoint(large-desktop) {
+@include breakpoint(for-desktop-up) {
     .get-started-screen {
         margin: 2rem 0;
         height: 65vh;
@@ -327,7 +333,7 @@ h1.heading-h1::first-line {
         text-align: center;
 }
 
-@include breakpoint(large-desktop) {
+@include breakpoint(for-desktop-up) {
     .width-45 {
         width: 45%;
         margin: 0 auto;

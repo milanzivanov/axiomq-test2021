@@ -38,7 +38,7 @@ ul.desktop-nav__box {
     }
 }
 
-@include breakpoint(large-desktop) {
+@include breakpoint(for-desktop-up) {
     nav.mobile-nav--btn {
         display: none;
     }

@@ -88,7 +88,7 @@ button.footer-subscribe {
 }
 
 // footer mediaqueris desktop
-@include breakpoint(large-desktop) {
+@include breakpoint(for-desktop-up) {
     .footer__container {
         flex-direction: row;
         padding: 0 1rem;
