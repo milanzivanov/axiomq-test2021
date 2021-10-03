@@ -1,0 +1,128 @@
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.footer__container--item {
+    padding: 1rem 0;
+
+    h4 {
+        padding-bottom: 1rem;
+        color: $primary-blue;
+    }
+}
+
+.footer__container--border-bootom {
+    border-bottom: 1px solid $border-color;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+
+    a.email-color {
+        color: $btn-red;
+    }
+
+    p {
+        color: $black;
+    }
+}
+
+.footer-contact__content {
+    li {
+        strong {
+            color: $black;
+        }
+    }
+}
+
+.footer-links {
+    display: none;
+}
+
+.footer-links__content {
+    li {
+         a {
+             color: $black;
+         }
+    }
+}
+
+form.footer-signup__content {
+    width: 100%;
+    border: 1px solid $btn-red;
+    border-radius: 20px;
+    outline: none;
+    font-weight: bold;
+}
+
+input[type=email] {
+    padding: .5rem .5rem .5rem .8rem;
+    border: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 58.5%;
+    margin: 0 5px 0 0;
+    outline: none;
+}
+
+button.footer-subscribe {
+    padding: .5rem;
+    border: 0;
+    background-color: $btn-red;
+    color: $white;
+    text-transform: uppercase;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 39%;
+    outline: none;
+}
+
+.footer__copyrights {
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 0.5rem 0;
+    border-top: 0;
+}
+
+// footer mediaqueris desktop
+@include breakpoint(large-desktop) {
+    .footer__container {
+        flex-direction: row;
+        padding: 0 1rem;
+    }
+
+    .footer__container--item {
+        padding: 1rem;
+        flex: 1 1 25%;
+        margin: 0.1rem;
+    }
+
+    .footer__container--item:last-child {
+        flex: 1 1 40%;
+    }
+
+    .footer-contact {
+        flex-direction: column;
+    }
+
+    .footer__container--border-bootom {
+        border: 0;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__copyrights {
+        text-align: left;
+        padding: .5rem;
+    }
+
+    .footer__copyrights {
+        border-top: 1px solid $border-color;
+    }
+}

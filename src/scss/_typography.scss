@@ -1,0 +1,89 @@
+// headings
+h1.heading-h1 {
+    font-family: "Manrope" sans-serif;
+    font-size: 2.125rem;
+    line-height: 2.25rem;
+    padding-bottom: 1.25rem;
+    font-weight: 700;
+    color: $primary-paragraph-black;
+}
+
+@include breakpoint(large-desktop) {
+    h1.heading-h1 {
+        font-size: 3.75rem;
+        line-height: 4rem;
+    }
+}
+
+h2.heading-h2-24 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $primary-paragraph-black;
+}
+
+@include breakpoint(large-desktop) {
+    h2.heading-h2-24 {
+        font-size: 1.875rem;
+    }
+}
+
+h2.heading-h2--34 {
+    font-size: 2.125rem;
+    font-weight: 700;
+}
+
+h3.heading-h3-21 {
+    font-size: 1.3125rem;
+    font-weight: bold;
+}
+h3.heading-h3--blue-color {
+    color: $primary-blue;
+}
+
+h4.heading-h4-18 {
+    font-size: 1.125rem;
+    color: $primary-blue;
+    font-weight: bold;
+}
+
+
+// paragraphs
+.paragraph-14 {
+    font-family: "Manrope" sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: $primary-paragraph-black;
+}
+
+.paragraph-18 {
+    font-family: "Manrope" sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    font-weight: 300;
+    color: $primary-paragraph-black;
+}
+
+@include breakpoint(large-desktop) {
+
+}
+
+@include breakpoint(large-desktop) {
+    .paragraph-18 {
+        font-size: 1.3125rem;
+    }
+}
+
+.paragraph-16 {
+    font-family: "Manrope" sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: $primary-paragraph-black;
+}
+
+.paragraph-12 {
+    font-size: 0.75rem;
+}
+
+.paragraph-12--color-blue {
+    color: $primary-blue;
+}

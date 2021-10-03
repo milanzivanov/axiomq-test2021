@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test task 2021</title>
+    <link rel="shortcut icon" type="image/ico" href="./favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Manrope:wght@200;300;400;700&display=swap" 
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick.css">     
+    <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body>
+    
+    <!-- mobile submenu -->
+    <div class="submenu-overlay"></div>
+    <div class="submenu-box">
+        <div class="submenu-box__content">
+            <img 
+                src="./src/img/logoLogo-mobile.png" 
+                alt="logo picture for mobile">
+
+            <div class="submenu-box__close--btn">
+                <img 
+                    src="./src/img/close.png" 
+                    alt="close submenu btn">
+            </div>
+        </div>
+        <nav class="submenu-box__item">
+            <ul>
+                <li class="active-state">
+                    <a href="#" class="submenu-open--btn feat-show--btn">
+                        Features
+                    <span>                        
+                        <img 
+                            src="./src/img/down.png" 
+                            alt="arrow down for submenu">
+                    </span>
+                    </a>
+                    <ul class="feat-show">
+                        <li>
+                            <a href="#">ManyChat Flows</a>
+                        </li>
+                        <li>
+                            <a href="#">ManyChat Experts</a>
+                        </li>
+                        <li>
+                            <a class="last-item" href="#">Zapier</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        Pricing
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        services
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="submenu-open--btn auto-show--btn">
+                    automation
+                    <span>                        
+                        <img 
+                            src="./src/img/down.png" 
+                            alt="arrow down for submenu">
+                    </span>
+                    </a>
+                    <ul class="auto-show">
+                        <li>
+                            <a href="#">ManyChat Flows</a>
+                        </li>
+                        <li>
+                            <a href="#">Rebate Automation</a>
+                        </li>
+                        <li>
+                            <a href="#">ManyChat Experts</a>
+                        </li>
+                        <li>
+                            <a class="last-item" href="#">Zapier</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>reasurces</span>
+                        <img 
+                        src="./src/img/down.png" 
+                        alt="arrow down for submenu">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>last launch</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">Sign in</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+
+        <div class="mobile-bg">
+        </div>
+        <div class="desktop-up-bg">
+        </div>
+
+        <div class="wrapper-inner">
+
+            <header class="header">
+                
+                <div class="logo">
+
+                    <picture>
+                        <source media="(min-width:768px)" srcset="./src/img/LogoLogo-desktop.png">
+                        <img src="./src/img/logoLogo-mobile.png" alt="main header logo">
+                    </picture>
+
+                </div>
+
+                <!-- mobile navigation -->
+                <nav class="mobile-nav--btn">
+                    <img 
+                        src="./src/img/hamburger.png" 
+                        alt="hamburger icon">
+                </nav>
+
+                <!-- desktop navigation -->
+                <nav class="desktop-nav">
+                    <ul class="desktop-nav__box">
+                        <li>
+                            <a href="#">
+                                Features
+                            </a>
+                            <span>
+                                <img src="./src/img/down.png" alt="open dropdown">
+                            </span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Pricing
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                animation
+                            </a>
+                            <span>
+                                <img src="./src/img/down.png" alt="open dropdown">
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                resources
+                            </a>
+                            <span>
+                                <img src="./src/img/down.png" alt="open dropdown">
+                            </span>
+                        </li>
+
+                        <li>
+                            <button class="btn-default btn-primary">
+                                free trial
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#">
+                                sign in
+                            </a>                    
+                        </li>
+                    </ul>
+                </nav>
+
+            </header>
+
+    
+            <main class="main">
+                <div class="hero-container">
+
+                    <div class="hero-container__item padding-bot-39">
+                        <h1 class="heading-h1">
+                            Achive<br>
+                            Amazon Success
+                        </h1>
+                        <p class="paragraph-18 padding-bot-31">
+                            A full suite of tools leveraging Amazon data to take your business to new heights
+                        </p>
+                        <button class="btn-default btn-primary">
+                            start 14-day free trial
+                        </button>
+                    </div>
+
+                    <div class="hero-container__item hero-container__item--right">
+                        <picture>
+                            <source 
+                                media="(min-width:768px)" 
+                                srcset="./src/img/hero-img-desktop.png" 
+                                alt="hero image desktop">
+                            <img 
+                                src="./src/img/hero-img-mobile.png" 
+                                alt="hero image mobile">
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="earners-container margin-bot-30">
+                    <div class="earners-container__item">
+                        <p class="paragraph-18">
+                            Trusted by Top 1% Amazon Earners
+                        </p>
+                    </div>
+                    <div class="earners-container__item">
+                        <div class="earners-container__item--sub">
+                            <a href="#">
+                                <img src="./src/img/ZhouLogo.png" alt="Zhou logo company">
+                            </a>
+                        </div>
+                        <div class="earners-container__item--sub">
+                            <a href="#">
+                                <img src="./src/img/Nested.png" alt="nested logo company">
+                            </a>
+                        </div>
+                        <div class="earners-container__item--sub">
+                            <a href="#">
+                                <img src="./src/img/321StrongLogo.png" alt="Strong logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+            <!-- wondering box -->
+            <div class="wondering-box">
+                <h2 class="heading-h2-24 padding-bot-30">
+                    Wondering how the best are winning on Amazon?
+                </h2>
+                <p class="paragraph-18 padding-bot-30 text-left">
+                    Even the most prominent brands are relying on out-dated data, tools, and processes to run their business.
+Now is the time to future-proof your business with the most innovative resources available to Amazon sellers, built by real sellers who have gotten it right on Amazon.
+                </p>
+
+                <h3 class="heading-h3-21 heading-h3--blue-color padding-bot-30">
+                    Success in 4 Steps
+                </h3>
+
+                <div class="wondering-box__steps">
+                    <div class="wondering-box__steps--item">
+                        <div class="box-icon">
+                            <img src="./src/img/one-dot.png" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h4 class="heading-h4-18">
+                                Get Access
+                            </h4>
+                            <p class="paragraph-16 padding-bot-20">
+                                Create your Seller.Tools account, then complete a one-time sync with your Seller Central account to unlock the best Amazon data.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="wondering-box__steps--item">
+                        <div class="box-icon">
+                            <img src="./src/img/two-dots.png" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h4 class="heading-h4-18">
+                                Optimize
+                            </h4>
+                            <p class="paragraph-16 padding-bot-20">
+                                Start optimizing like 1% with your access to the most innovative tools and resources, all in one place.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="wondering-box__steps--item">
+                        <div class="box-icon">
+                            <img src="./src/img/three-dots.png" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h4 class="heading-h4-18">
+                                Automate
+                            </h4>
+                            <p class="paragraph-16 padding-bot-20">
+                                Set yourself up for success by automating and offloading the most labor-intensive aspects of running your Amazon business.                        
+                            </p>
+                        </div>
+                    </div>
+                    <div class="wondering-box__steps--item">
+                        <div class="box-icon">
+                            <img src="./src/img/four-dots.png" alt="">
+                        </div>
+                        <div class="box-content">
+                            <h4 class="heading-h4-18">
+                                Manage
+                            </h4>
+                            <p class="paragraph-16 padding-bot-20">
+                                Find select your competitors, import and manage keywords, create listing (from suggested keywords - keywords with the highest priority), launch the product.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools box -->
+            <div class="tools-box">
+                <h2 class="heading-h2-24 text-center width-80">
+                    Solve Each Pain Point in Your Amazon Business by Using the Tools of Top 1% Sellers
+                </h2>
+                <div class="wrapper-inner tools-box__flex">
+                    <div class="tools-box__item">
+                        <svg class="svg__icon">
+                            <use xlink:href="./src/img/symbol-defs.svg#icon-productMenager"></use>
+                        </svg>
+                        <div class="tools-item-conteiner">
+                            <h4 class="heading-h4-18">
+                                Product Manager
+                            </h4>
+                            <p class="paragraph-16">
+                                Manage keywords, create listing and much more
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tools-box__item">
+                        <svg class="svg__icon">
+                            <use xlink:href="./src/img/symbol-defs.svg#icon-CompetitionResearch"></use>
+                        </svg>
+                        <div class="tools-item-conteiner">
+                            <h4 class="heading-h4-18">
+                                Competition Research
+                            </h4>
+                            <p class="paragraph-16">
+                                Run and Reverse ASIN search and find new keyword opportunities
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tools-box__item">
+                        <svg class="svg__icon">
+                            <use xlink:href="./src/img/symbol-defs.svg#icon-businessMenager"></use>
+                        </svg>
+                        <div class="tools-item-conteiner">
+                            <h4 class="heading-h4-18">
+                                Business Manager
+                            </h4>
+                            <p class="paragraph-16">
+                                Manage your selling business and focus on the growth
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tools-box__item">
+                        <svg class="svg__icon">
+                            <use xlink:href="./src/img/symbol-defs.svg#icon-lounchAutomation"></use>
+                        </svg>
+                        <div class="tools-item-conteiner">
+                            <h4 class="heading-h4-18">
+                                Launch Automation
+                            </h4>
+                            <p class="paragraph-16">
+                                Manage transactions and Launching a product
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tools-box__item">
+                        <svg class="svg__icon">
+                            <use xlink:href="./src/img/symbol-defs.svg#icon-wallet"></use>
+                        </svg>
+                        <div class="tools-item-conteiner">
+                            <h4 class="heading-h4-18">
+                                Wallet
+                            </h4>
+                            <p class="paragraph-16">
+                                Review your balance and manage transactions
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tools-box__item">
+                        <svg class="svg__icon">
+                            <use xlink:href="./src/img/symbol-defs.svg#icon-alerts"></use>
+                        </svg>
+                        <div class="tools-item-conteiner">
+                            <h4 class="heading-h4-18">
+                                Alerts
+                            </h4>
+                            <p class="paragraph-16">
+                                Set alerts and see improved product state
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Get started screen -->
+            <div class="get-started-screen text-center">
+                <picture 
+                    class="get-started-screen--bg">
+                    <source media="(min-width:768px)" 
+                    srcset="./src/img/getStartedCard.png">
+                    <img src="./src/img/getStartedCardMobile.png" 
+                    alt="get started card">
+                </picture>
+                <div class="get-started-screen__box">
+
+                    <div class="get-started-screen__box--heading">
+                        <h2 class="heading-h2-24">
+                            Get Started Now
+                        </h2>
+                        <p class="paragraph-18">
+                            Our plans start from as low as <span>$57 per month</span>
+                        </p>
+
+                    </div>
+                    <div class="get-started-screen__box--buttons">
+                        <button class="btn-default btn-primary margin-bot-20 margin-b margin-r">
+                            start 14-day free trial
+                        </button>
+                        <button class="btn-default btn-secondery">
+                            choose your pricing plan
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+    
+    <!-- Clients block with slick slider-->
+    <div class="clients-block">
+
+        <!-- custom arrows -->
+        <div class="left-nav-custom">
+            <img src="./src/img/arrow-left.png" alt="arrow left">
+        </div>
+        <div class="right-nav-custom">
+            <img src="./src/img/arrow-right.png" alt="arrow right">
+        </div>
+
+        <h2 class="heading-h2-24 padding-bot-30">
+            Impressions from Our Clients
+        </h2>
+        <div class="wrapper-inner">
+
+
+            <!-- Slider start -->
+            <div class="slick-slider">
+
+                <div class="slick-slider__item">
+                    <div class="svg-icon margin-bot-30">
+                        <svg class="svg__icon">
+                            <use xlink:href="./src/img/symbol-defs.svg#icon-ourClients">
+                            </use>
+                        </svg>
+                    </div>
+                    <p class="paragraph-16 slick-slider__item--link">
+                        Easily manage tens of thousands of keywords within one powerful, intuitive interface. Our keyword manager instantly 
+                    </p>
+                    <div class="slick-slider__user">
+                        <img 
+                            class="slick-slider__user--rounded margin-bot-20"
+                            src="./src/img/alex-upperman.png" alt="alex uperman">
+                        <p class="paragraph-12 paragraph-12--color-blue">Alex Uperman</p>
+                        <span class="paragraph-12">
+                            Co-Founder
+                        </span>
+                    </div>
+                </div>
+                <div class="slick-slider__item">
+                    <div class="svg-icon margin-bot-30">
+                        <svg class="svg__icon">
+                            <use xlink:href="./src/img/symbol-defs.svg#icon-ourClients">
+                            </use>
+                        </svg>
+                    </div>
+                    <p class="paragraph-16 slick-slider__item--link">
+                        Easily manage tens of thousands of keywords within one powerful, intuitive interface. Our keyword manager instantly 
+                    </p>
+                    <div class="slick-slider__user">
+                        <img 
+                            class="slick-slider__user--rounded"
+                            src="./src/img/alex-upperman.png" alt="alex uperman">
+                        <h6>Alex Uperman</h6>
+                        <span>
+                            Co-Founder
+                        </span>
+                    </div>
+                </div>
+                <div class="slick-slider__item">
+                    <div class="svg-icon margin-bot-30">
+                        <svg class="svg__icon">
+                            <use xlink:href="./src/img/symbol-defs.svg#icon-ourClients">
+                            </use>
+                        </svg>
+                    </div>
+                    <p class="paragraph-16 slick-slider__item--link">
+                        Easily manage tens of thousands of keywords within one powerful, intuitive interface. Our keyword manager instantly 
+                    </p>
+                    <div class="slick-slider__user">
+                        <img 
+                            class="slick-slider__user--rounded"
+                            src="./src/img/alex-upperman.png" alt="alex uperman">
+                        <h6>Alex Uperman</h6>
+                        <span>
+                            Co-Founder
+                        </span>
+                    </div>
+                </div>
+                <div class="slick-slider__item">
+                    <div class="svg-icon margin-bot-30">
+                        <svg class="svg__icon">
+                            <use xlink:href="./src/img/symbol-defs.svg#icon-ourClients">
+                            </use>
+                        </svg>
+                    </div>
+                    <p class="paragraph-16 slick-slider__item--link">
+                        Easily manage tens of thousands of keywords within one powerful, intuitive interface. Our keyword manager instantly 
+                    </p>
+                    <div class="slick-slider__user">
+                        <img 
+                            class="slick-slider__user--rounded"
+                            src="./src/img/alex-upperman.png" alt="alex uperman">
+                        <h6>Alex Uperman</h6>
+                        <span>
+                            Co-Founder
+                        </span>
+                    </div>
+                </div>
+                <div class="slick-slider__item">
+                    <div class="svg-icon margin-bot-30">
+                        <svg class="svg__icon">
+                            <use xlink:href="./src/img/symbol-defs.svg#icon-ourClients">
+                            </use>
+                        </svg>
+                    </div>
+                    <p class="paragraph-16 slick-slider__item--link">
+                        Easily manage tens of thousands of keywords within one powerful, intuitive interface. Our keyword manager instantly 
+                    </p>
+                    <div class="slick-slider__user">
+                        <img 
+                            class="slick-slider__user--rounded"
+                            src="./src/img/alex-upperman.png" alt="alex uperman">
+                        <h6>Alex Uperman</h6>
+                        <span>
+                            Co-Founder
+                        </span>
+                    </div>
+                </div>
+                <div class="slick-slider__item">
+                    <div class="svg-icon margin-bot-30">
+                        <svg class="svg__icon">
+                            <use xlink:href="./src/img/symbol-defs.svg#icon-ourClients">
+                            </use>
+                        </svg>
+                    </div>
+                    <p class="paragraph-16 slick-slider__item--link">
+                        Easily manage tens of thousands of keywords within one powerful, intuitive interface. Our keyword manager instantly 
+                    </p>
+                    <div class="slick-slider__user">
+                        <img 
+                            class="slick-slider__user--rounded"
+                            src="./src/img/alex-upperman.png" alt="alex uperman">
+                        <h6>Alex Uperman</h6>
+                        <span>
+                            Co-Founder
+                        </span>
+                    </div>
+                </div>
+                <div class="slick-slider__item">
+                    <div class="svg-icon margin-bot-30">
+                        <svg class="svg__icon">
+                            <use xlink:href="./src/img/symbol-defs.svg#icon-ourClients">
+                            </use>
+                        </svg>
+                    </div>
+                    <p class="paragraph-16 slick-slider__item--link">
+                        Easily manage tens of thousands of keywords within one powerful, intuitive interface. Our keyword manager instantly 
+                    </p>
+                    <div class="slick-slider__user">
+                        <img 
+                            class="slick-slider__user--rounded"
+                            src="./src/img/alex-upperman.png" alt="alex uperman">
+                        <h6>Alex Uperman</h6>
+                        <span>
+                            Co-Founder
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CTA Block -->
+    <div class="cta-block">
+        <div class="wrapper-inner">
+            <h2 class="heading-h2--34 color-white padding-bot-30">
+                Start your free trial!
+            </h2>
+            <p class="paragraph-18 padding-bot-40 color-white width-45">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores recusandae repellat magni repudiandae, ut alias!
+            </p>
+            <button class="btn-default btn-primary">
+                start 14-day free trial
+            </button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="wrapper-inner">
+            <div class="footer__container">
+                 
+                <div class="footer__container--item">
+                    <h4>
+                        <img src="./src/img/logoLogo-mobile.png" alt="footer logo">
+                    </h4>
+                    <p class="paragraph-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, fugit. Ipsum eligendi qui laudantium ut.</p>
+                </div>
+
+                <div 
+                    class="footer__container--item 
+                    footer__container--border-bootom">
+                    <h4>
+                        Contact
+                    </h4>
+                    <div class="footer-contact">
+                        <ul class="footer-contact__content">
+                            <li>
+                                <a href="#">
+                                    <strong>LogLogo LLC</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <p>5940S rainbow Blwd.</p>
+                            </li>
+                            <li>
+                                <p>Ste 400 # 72094</p>
+                            </li>
+                        </ul>
+                        <ul class="footer-contact__content">
+                            <li>
+                                <p>Las Vegas, NV</p>
+                            </li>
+                            <li>
+                                <p>89118-2507</p>
+                            </li>
+                            <li>
+                                <p>United State</p>
+                            </li>
+                            <li>
+                                <a class="email-color" href="#">
+                                    hello@logologo.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div 
+                    class="footer__container--item footer-links">
+                    <h4>
+                        Links
+                    </h4>
+                    <div class="footer-links">
+                        <ul class="footer-links__content">
+                            <li>
+                                <a href="#">
+                                    Features
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Sign In
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    FAQ / Academy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Affiliate Program
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Privacy Police
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div 
+                    class="footer__container--item footer__container--border-bootom">
+                    <h4>
+                        Newsletter Signup
+                    </h4>
+
+                    <p class="paragraph-14 padding-bot-20 margin-b">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, est.
+                    </p>
+    
+                    <form class="footer-signup__content margin-bot-40">
+                        <input 
+                            type="email" 
+                            name="email" 
+                            placeholder="Email" 
+                            required>
+                        <button class="footer-subscribe">
+                            Subscribe
+                        </button>
+                    </form>
+
+                </div>
+
+            </div>
+            <div class="footer__copyrights">
+                <p>© 2021 Copyrights by LogoLogo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/slick-carousel/slick/slick.js"></script>
+    <script src="./dist/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+//////////////////
+// Slick slider and custom properties
+
+.left-nav-custom {
+    position: absolute;
+    left: 220px;
+    transform: translateY(-50%);
+    top: 50%;
+    cursor: pointer;
+}
+.right-nav-custom {
+    position: absolute;
+    right: 220px;
+    transform: translateY(-50%);
+    top: 50%;
+    cursor: pointer;
+}
+
+.slick-dots li button:before {
+    font-size: 15px;
+}
+
+.slick-slider__item {
+    padding: .3rem;
+}
+
+.slick-slider__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+
+    h6 {
+        margin: 0;
+    }
+
+    img.slick-slider__user--rounded {
+        border-radius: 100px;
+    }
+}
+  
+.slick-dots li button:before {
+    color: #bcbcbc;
+}
+  
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #DDDDD6;
+}
+  
+.slick-prev:before, 
+.slick-next:before {
+    color: #000;
+}
+  
+.slick-slide.slick-current.slick-active {
+
+    .slick-slider__item--link {
+        background-color: #ECF3FA;
+        padding: 1.875rem;
+        border-radius: 10px;
+           }
+
+    .svg__icon {
+        width: 100px;
+    }
+
+}

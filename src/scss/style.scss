@@ -1,0 +1,323 @@
+@import "mixins";
+@import "colors";
+@import "typography";
+@import "icons-buttons";
+@import "fonts";
+@import "global";
+@import "assets-plugins";
+@import "header";
+@import "footer";
+
+
+body {
+    font-family: 'Lato', 'Manrope', sans-serif;
+    background-color: $white;
+}
+
+//////////////
+// main style
+.container {
+    position: relative;
+    padding: 0 1rem;
+    z-index: 10;
+    background-color: #FFFFFF;
+}
+
+.mobile-bg {
+    background: url("./../src/img/bg-mobile.png") top right no-repeat;
+    position: absolute;
+    width: 96%;
+    height: 100%;
+    z-index: -5;
+    display: inline-block;
+}
+
+.desktop-up-bg {
+    display: none;
+}
+
+@include breakpoint(large-desktop) {
+    .mobile-bg {
+        display: none;
+    }
+
+    .desktop-up-bg {
+        background: url("./../src/img/bg-desktop.png") top right no-repeat;
+        position: absolute;
+        width: 85%;
+        height: 100%;
+        z-index: -5;
+        display: inline-block;
+    }
+}
+
+
+////////////
+// Hero
+.main {
+    padding: 0;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+@include breakpoint(large-desktop) {
+    .hero-container {
+        flex-direction: row;
+    }
+}
+
+.hero-container__item {
+    flex: 1 1 50%;
+    text-align: center;
+}
+
+@include breakpoint(large-desktop) {
+    .hero-container__item {
+        text-align: left;
+    }
+}
+
+@include breakpoint(large-desktop) {
+    .hero-container__item--right {
+        display: flex;
+        justify-content: right;
+    }
+}
+
+h1.heading-h1::first-line {
+    color: $primary-blue;
+}
+
+///////////////
+// Earners
+.earners-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 1.3rem;
+    border-bottom: 1px solid #c4c4c4;
+    border-top: 1px solid #c4c4c4;
+}
+
+@include breakpoint(large-desktop) {
+    .earners-container {
+        flex-direction: row;
+    }
+}
+
+.earners-container__item {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.earners-container__item--sub {
+    padding-left: 2.5em;
+}
+
+//////////////////
+// wondering part
+.wondering-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+}
+@include breakpoint(large-desktop) {
+    .wondering-box {
+        padding-bottom: 5.125rem;
+    }
+}
+
+
+.wondering-box__steps {
+    text-align: left;
+}
+
+
+@include breakpoint(large-desktop) {
+    .wondering-box__steps {
+        display: flex;
+        border-bottom: 1px solid #c4c4c4;
+    }
+}
+
+.wondering-box__steps--item {
+    display: flex;
+}
+
+@include breakpoint(large-desktop) {
+    .wondering-box__steps--item {
+        padding-right: 1.5rem;
+    }
+}
+
+
+.box-icon {
+    flex: 1 1 10%;
+}
+
+.box-content {
+    flex: 1 1 80%;
+}
+
+//////////////////
+// Tools part
+.tools-box {
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 1.5rem;
+}
+
+.tools-box__item {
+    display: flex;
+    margin: .5rem;
+    transition: 0.3ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #F6F2F7;
+    }
+}
+
+.tools-item-conteiner {
+    padding: 1.5rem 0 0 .5rem;
+}
+
+@include breakpoint(large-desktop) {
+    .tools-box__flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tools-box__item {
+        padding: 1rem;
+    }
+
+    .tools-box {
+        padding-bottom: 3.75rem;
+
+        h2 {
+            padding-bottom: 2rem;
+        }
+    }
+
+    .tools-box__item {
+        flex: 1 1 calc(33.333% - 1rem);
+    }
+
+    .width-80 {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .tools-item-conteiner {
+          width: 70%;
+      }
+}
+
+
+///////////////////
+// Clients block with slick slider
+.clients-block {
+    position: relative;
+    background-color: $bg-color;
+    text-align: center;
+    padding: 2rem;
+}
+
+//////////////////////////
+// Get started screen
+.get-started-screen {
+    position: relative;
+    margin: 0 0 2rem 0;
+    height: 70vh;
+}
+
+
+.get-started-screen--bg {
+    position: absolute;
+    top: 0;
+    transform: translateX(50%);
+    right: 50%;
+    z-index: 5;
+}
+
+.get-started-screen__box {
+    border: 1px solid $border-color;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 0;
+    padding: 5.1rem 0 0 0;
+}
+
+.get-started-screen__box--heading,
+.get-started-screen__box--buttons {
+    padding-bottom: 2rem;
+
+    p {
+        width: 80%;
+        margin: 0 auto;
+
+        span {
+            color: $primary-blue;
+        }
+    }
+
+}
+
+@include breakpoint(large-desktop) {
+    .get-started-screen {
+        margin: 2rem 0;
+        height: 65vh;
+    }
+
+    .get-started-screen__box {
+        padding: 12rem 2rem 0rem 2rem;
+        transform: translateX(-50%);
+        left: 50%;
+        width: 65%;
+    }
+
+    .get-started-screen__box--heading {
+        padding-bottom: 4rem;
+
+        h3 {
+            padding-bottom: 2rem;
+        }
+    }
+
+    .get-started-screen__box--buttons {
+        padding-bottom: 3rem;
+    }
+
+    .margin-r {
+        margin-right: 1rem;
+    }
+}
+
+/////////////
+// Cta part
+.cta-block {
+    background: rgb(113,73,154);
+    background: 
+        linear-gradient(90deg, rgba(113,73,154,1) 0%, rgba(0,147,182,1) 100%);
+        padding: 2.5rem 1.3125rem;
+        text-align: center;
+}
+
+@include breakpoint(large-desktop) {
+    .width-45 {
+        width: 45%;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
