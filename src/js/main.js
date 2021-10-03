@@ -14,7 +14,6 @@ jQuery(function() {
     $('.feat-show--btn').on("click", function(e) {
         $('ul.feat-show').toggleClass("show");
     });
-    
     $('.auto-show--btn').on("click", function(e) {
         $('ul.auto-show').toggleClass("show");
     });
@@ -46,9 +45,6 @@ jQuery(function() {
               arrows: false
             }
           }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
         ]
     });
 

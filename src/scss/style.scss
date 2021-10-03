@@ -119,6 +119,9 @@ h1.heading-h1::first-line {
 .earners-container__item--sub {
     padding-left: 2.5em;
 }
+.earners-container__item--sub:first-child {
+    padding-left: 0;
+}
 
 //////////////////
 // wondering part
