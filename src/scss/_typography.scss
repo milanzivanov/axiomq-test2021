@@ -32,6 +32,12 @@ h2.heading-h2--34 {
     font-weight: 700;
 }
 
+@include breakpoint(large-desktop) {
+    h2.heading-h2--34 {
+        font-size: 3.75rem;
+    }
+}
+
 h3.heading-h3-21 {
     font-size: 1.3125rem;
     font-weight: bold;
