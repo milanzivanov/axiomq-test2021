@@ -258,6 +258,13 @@ h1.heading-h1::first-line {
     padding: 5.1rem 0 0 0;
 }
 
+@include breakpoint(mobile-up) {
+    .get-started-screen__box {
+        padding: 11rem 0 0;
+    }
+}
+
+
 .get-started-screen__box--heading,
 .get-started-screen__box--buttons {
     padding-bottom: 2rem;
@@ -271,6 +278,13 @@ h1.heading-h1::first-line {
         }
     }
 
+}
+
+@include breakpoint(mobile-up) {
+    .get-started-screen__box--heading,
+    .get-started-screen__box--buttons {
+        padding-bottom: 4rem;
+    }
 }
 
 @include breakpoint(large-desktop) {
