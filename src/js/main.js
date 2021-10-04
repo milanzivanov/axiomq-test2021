@@ -25,7 +25,6 @@ jQuery(function() {
 
     // slick slider 
     $('.slick-slider').slick({
-        // centerMode: true,
         dots: false,
         arrows: false,
         focusOnSelect: true,
@@ -34,12 +33,23 @@ jQuery(function() {
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 3,
+        mobileFirst: true,
         responsive: [
+          {
+            breakpoint: 360,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+              arrows: false
+            }
+          },
           {
             breakpoint: 768,
             settings: {
-              slidesToShow: 1,
-              slidesToScroll: 2,
+              slidesToShow: 3,
+              slidesToScroll: 1,
               infinite: true,
               dots: true,
               arrows: false

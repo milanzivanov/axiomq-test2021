@@ -1,25 +1,4 @@
-//////////////////
-// Slick slider and custom properties
-
-.left-nav-custom {
-    position: absolute;
-    left: 220px;
-    transform: translateY(-50%);
-    top: 50%;
-    cursor: pointer;
-}
-.right-nav-custom {
-    position: absolute;
-    right: 220px;
-    transform: translateY(-50%);
-    top: 50%;
-    cursor: pointer;
-}
-
-.slick-dots li button:before {
-    font-size: 15px;
-}
-
+// slick slider
 .slick-slider__item {
     padding: .3rem;
 }
@@ -32,26 +11,37 @@
 
     h6 {
         margin: 0;
-        color: #7691BB;
+        color: primary-blue;
     }
 
     img.slick-slider__user--rounded {
         border-radius: 100px;
     }
 }
-  
+
 .slick-dots li button:before {
-    color: #bcbcbc;
+    font-size: 15px;
 }
-  
+
+
+.slick-dots li button:before {
+    font-size: 18px;
+    border: 1px solid #d1d1d1;;
+    padding: 0;
+    border-radius: 50px;
+}
 .slick-dots li.slick-active button:before {
     opacity: .75;
-    color: #DDDDD6;
+    color: #E1E0E0;    
+}
+
+.slick-dots li button:before {
+    color: #FAFAFA;
 }
   
 .slick-prev:before, 
 .slick-next:before {
-    color: #000;
+    color: #FAFAFA;
 }
   
 .slick-slide.slick-current.slick-active {
@@ -60,10 +50,38 @@
         background-color: #ECF3FA;
         padding: 1.875rem;
         border-radius: 10px;
-           }
+        }
 
-    .svg__icon {
-        width: 100px;
+        .svg__icon {
+            width: 100px;
+        }
+
+}
+
+
+//////////////////
+// Slick slider and custom properties
+.left-nav-custom,
+.right-nav-custom {
+    display: none;
+}
+
+@include breakpoint(for-desktop-up) {
+    .left-nav-custom {
+        display: inline-block;
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        left: -30px;
+        cursor: pointer;
+    }
+    .right-nav-custom {
+        display: inline-block;
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        right: -30px;
+        cursor: pointer;
     }
 
 }

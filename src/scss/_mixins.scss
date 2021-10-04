@@ -26,7 +26,11 @@
     }
 
     @else if $point == 'for-desktop-up' {
-        @media only screen and (min-width: 1200px) { @content; }
+        @media only screen and (min-width: 1024px) { @content; }
+    }
+
+    @else if $point == 'for-big-desktop-up' {
+        @media (min-width: 1366px) { @content; }
     }
 
     @else {

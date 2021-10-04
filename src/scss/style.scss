@@ -32,7 +32,7 @@ body {
 .mobile-bg {
     background: url("./../src/img/bg-mobile.png") top right no-repeat;
     position: absolute;
-    width: 96%;
+    width: 100%;
     height: 100%;
     z-index: -5;
     display: inline-block;
@@ -50,10 +50,17 @@ body {
     .desktop-up-bg {
         background: url("./../src/img/bg-desktop.png") top right no-repeat;
         position: absolute;
-        width: 85%;
+        
+        width: 100%;
         height: 100%;
         z-index: -5;
         display: inline-block;
+    }
+}
+
+@include breakpoint(for-big-desktop-up) {
+    .desktop-up-bg {
+        width: 85%;
     }
 }
 
@@ -239,39 +246,60 @@ h1.heading-h1::first-line {
     padding: 2rem;
 }
 
+.nav-custom__container {
+    position: relative;
+    width: 100%;
+}
+
 //////////////////////////
 // Get started screen
 .get-started-screen {
     position: relative;
-    margin: 0 0 2rem 0;
-    height: 70vh;
+    margin: 7.5625rem 0 3.5rem;
 }
+
+@include breakpoint(tablet) {
+    .get-started-screen {
+        margin: 12.5625rem 0 3.5rem;
+    }
+}
+
+@include breakpoint(for-desktop-up) {
+    .get-started-screen {
+        margin: 6.0625rem 0 3.5rem 0;
+        padding: 7rem 0 0 0;
+    }
+}
+
+
 
 
 .get-started-screen--bg {
     position: absolute;
-    top: 0;
-    transform: translateX(50%);
-    right: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
     z-index: 5;
+    display: block;
 }
 
 .get-started-screen__box {
     border: 1px solid $border-color;
     border-radius: 30px;
-    position: absolute;
-    bottom: 0;
-    padding: 5.1rem 0 0 0;
+    padding: 9rem 0 0;
 }
 
-@include breakpoint(mobile-up) {
+@include breakpoint(for-desktop-up) {
+
     .get-started-screen__box {
-        padding: 11rem 0 0;
+        width: 65%;
+        margin: auto;
     }
 }
 
 
-.get-started-screen__box--heading,
+
+
+.get-started-screen__box--text,
 .get-started-screen__box--buttons {
     padding-bottom: 2rem;
 
@@ -287,26 +315,14 @@ h1.heading-h1::first-line {
 }
 
 @include breakpoint(mobile-up) {
-    .get-started-screen__box--heading,
+    .get-started-screen__box--text,
     .get-started-screen__box--buttons {
         padding-bottom: 4rem;
     }
 }
 
 @include breakpoint(for-desktop-up) {
-    .get-started-screen {
-        margin: 2rem 0;
-        height: 65vh;
-    }
-
-    .get-started-screen__box {
-        padding: 12rem 2rem 0rem 2rem;
-        transform: translateX(-50%);
-        left: 50%;
-        width: 65%;
-    }
-
-    .get-started-screen__box--heading {
+    .get-started-screen__box--text {
         padding-bottom: 4rem;
 
         h3 {
@@ -315,7 +331,7 @@ h1.heading-h1::first-line {
     }
 
     .get-started-screen__box--buttons {
-        padding-bottom: 3rem;
+        padding-bottom: 3.5rem;
     }
 
     .margin-r {
