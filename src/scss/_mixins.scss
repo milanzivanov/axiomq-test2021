@@ -16,11 +16,6 @@
     @if $point == 'mobile' {
         @media only screen and (min-width: 360px) { @content; }
     }
-    // this mediaquery is for my phone resolution poco f3 and testing
-    @else if $point == 'mobile-up' {
-        @media only screen and (min-width: 393px) { @content; }
-    }
-
     @else if $point == 'tablet' {
         @media only screen and (min-width: 768px) { @content; }
     }

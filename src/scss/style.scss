@@ -1,6 +1,6 @@
 @import "mixins";
 @import "colors";
-@import "typography";
+@import "typography-spacing";
 @import "icons-buttons";
 @import "fonts";
 @import "global";
@@ -22,6 +22,11 @@ body {
     background-color: $white;
 }
 
+@include breakpoint(tablet) {
+    .container {
+        padding: 0 2rem;
+    }
+}
 @include breakpoint(for-desktop-up) {
     .container {
         padding: 0;
@@ -165,14 +170,27 @@ h1.heading-h1::first-line {
     display: flex;
 }
 
+@include breakpoint(tablet) {
+    .wondering-box__steps {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .wondering-box__steps--item {
+        display: flex;
+        flex: 1 1 40%;
+    }
+}
+
 @include breakpoint(for-desktop-up) {
     .wondering-box__steps--item {
+        flex: 1 1 20%;
         padding-right: 1.5rem;
     }
 }
 
 .box-icon {
-    flex: 1 1 10%;
+    flex: 1 1 5%;
     margin: 0.3rem 0 0 0;
 }
 
@@ -181,11 +199,8 @@ h1.heading-h1::first-line {
 }
 
 @include breakpoint(tablet) {
-    .box-icon {
-        flex: 1 1 5%;
-    }
     .box-content {
-        flex: 1 1 95%;
+        flex: 1 1 85%;
     }
 }
 
@@ -206,6 +221,11 @@ h1.heading-h1::first-line {
     padding-bottom: 1.5rem;
 }
 
+.tools-box__flex {
+    display: flex;
+    flex-direction: column;
+}
+
 .tools-box__item {
     display: flex;
     margin: .5rem;
@@ -221,7 +241,34 @@ h1.heading-h1::first-line {
     padding: 1.5rem 0 0 .5rem;
 }
 
+
+@include breakpoint(tablet) {
+
+    .tools-box {
+        padding-bottom: 3.75rem;
+
+        h2 {
+            padding-bottom: 2rem;
+        }
+    }
+    .tools-box__flex {
+        flex-flow: row wrap;
+    }
+
+    .tools-box__item {
+        flex: 1 1 40%;
+    }
+}
+
+
 @include breakpoint(for-desktop-up) {
+    .tools-box {
+        padding-bottom: 3.75rem;
+
+        h2 {
+            padding-bottom: 2rem;
+        }
+    }
     .tools-box__flex {
         display: flex;
         flex-wrap: wrap;
@@ -231,13 +278,6 @@ h1.heading-h1::first-line {
         padding: 1rem;
     }
 
-    .tools-box {
-        padding-bottom: 3.75rem;
-
-        h2 {
-            padding-bottom: 2rem;
-        }
-    }
 
     .tools-box__item {
         flex: 1 1 calc(33.333% - 1rem);
@@ -308,9 +348,6 @@ h1.heading-h1::first-line {
         margin: auto;
     }
 }
-
-
-
 
 .get-started-screen__box--text,
 .get-started-screen__box--buttons {

@@ -1,3 +1,4 @@
+////////////////
 // headings
 h1.heading-h1 {
     font-family: "Manrope" sans-serif;
@@ -52,7 +53,7 @@ h4.heading-h4-18 {
     font-weight: bold;
 }
 
-
+////////////////
 // paragraphs
 .paragraph-14 {
     font-family: "Manrope" sans-serif;
@@ -88,4 +89,67 @@ h4.heading-h4-18 {
 
 .paragraph-12--color-blue {
     color: $primary-blue;
+}
+
+/////////////////////////////
+// bottom padding spacing
+.padding-bot-20 {
+    padding-bottom: 1.25rem;
+}
+  
+@include breakpoint(tablet) {
+    .padding-bot-20 {
+        padding-bottom: 2.4375rem;
+    }
+}
+  
+@include breakpoint(for-desktop-up) {
+    .padding-bot-20 {
+        padding-bottom: 3.75rem;
+    }
+}
+  
+.padding-bot-30 {
+    padding-bottom: 1.875rem;
+}
+  
+@include breakpoint(for-desktop-up) {
+    .padding-bot-30 {
+        padding-bottom: 2.125rem;
+    }
+}
+  
+
+@include breakpoint(large-desktop) {
+    .padding-bot-30 {
+        padding-bottom: 3.75rem;
+    }
+}
+
+.padding-bot-31 {
+    padding-bottom: 1.9375rem;
+}
+.padding-bot-39 {
+    padding-bottom: 2.4375rem;
+}
+.padding-bot-40 {
+    padding-bottom: 2.5rem;
+}
+
+////////////////////////
+// bottom margin spacing
+.margin-bot-20 {
+    margin-bottom: 1.25rem;
+}
+.margin-bot-30 {
+    margin-bottom: 1.875rem;
+}
+@include breakpoint(for-desktop-up) {
+    .margin-bot-30 {
+        margin-bottom: 3.5rem;
+    }
+}
+
+.margin-bot-40 {
+    margin-bottom: 2.5rem;
 }
