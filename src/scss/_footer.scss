@@ -90,7 +90,6 @@ button.footer-subscribe {
     border-top: 0;
 }
 
-// footer mediaqueris desktop
 @include breakpoint(for-desktop-up) {
     .footer__container {
         flex-direction: row;
@@ -122,10 +121,12 @@ button.footer-subscribe {
 
     .footer__copyrights {
         text-align: left;
-        padding: .5rem;
+        padding: 1rem;
+        border-top: 1px solid $border-color;
+
+        p {
+            font-size: 0.75rem;
+        }
     }
 
-    .footer__copyrights {
-        border-top: 1px solid $border-color;
-    }
 }

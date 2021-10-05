@@ -92,13 +92,12 @@ body {
     text-align: center;
 }
 
+
 @include breakpoint(for-desktop-up) {
     .hero-container__item {
         text-align: left;
+        padding: 0 1rem;
     }
-}
-
-@include breakpoint(for-desktop-up) {
     .hero-container__item--right {
         display: flex;
         justify-content: right;
