@@ -85,5 +85,13 @@
         right: -30px;
         cursor: pointer;
     }
+}
 
+@include breakpoint(for-big-desktop-up) {
+    .left-nav-custom {
+        left: -100px;
+    }
+    .right-nav-custom {
+        right: -100px;
+    }
 }
