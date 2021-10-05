@@ -70,11 +70,11 @@ jQuery(function() {
 
     // custom slick arrows
     $('.left-nav-custom').on("click", function() {
-    $('.slick-slider').slick('slickPrev');
+        $('.slick-slider').slick('slickPrev');
     });
 
     $('.right-nav-custom').on("click", function() {
-    $('.slick-slider').slick('slickNext');
+        $('.slick-slider').slick('slickNext');
     });
 
 });
