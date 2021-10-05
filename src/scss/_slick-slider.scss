@@ -3,6 +3,10 @@
     padding: .3rem;
 }
 
+.slick-slider__item--link {
+    cursor: pointer;
+}
+
 .slick-slider__user {
     display: flex;
     flex-direction: column;
