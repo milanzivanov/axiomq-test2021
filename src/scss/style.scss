@@ -110,7 +110,7 @@ h1.heading-h1::first-line {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-top: 1.3rem;
+    padding: 1.843rem 0;
     border-bottom: 1px solid #c4c4c4;
     border-top: 1px solid #c4c4c4;
 }
@@ -146,7 +146,7 @@ h1.heading-h1::first-line {
 }
 @include breakpoint(for-desktop-up) {
     .wondering-box {
-        padding-bottom: 5.125rem;
+        padding-bottom: 3.75rem;
     }
 }
 
@@ -157,7 +157,7 @@ h1.heading-h1::first-line {
 @include breakpoint(for-desktop-up) {
     .wondering-box__steps {
         display: flex;
-        border-bottom: 1px solid #c4c4c4;
+        border-bottom: 1px solid $border-color;
     }
 }
 
@@ -170,7 +170,6 @@ h1.heading-h1::first-line {
         padding-right: 1.5rem;
     }
 }
-
 
 .box-icon {
     flex: 1 1 10%;
@@ -196,11 +195,9 @@ h1.heading-h1::first-line {
     }
     .box-content {
         flex: 1 1 90%;
-        padding: 0 0 0 0.7rem;
+        padding: 0 0 0 0.9375rem;
     }
 }
-
-
 
 //////////////////
 // Tools part
@@ -285,7 +282,7 @@ h1.heading-h1::first-line {
 
 @include breakpoint(for-desktop-up) {
     .get-started-screen {
-        margin: 6.0625rem 0 3.5rem 0;
+        margin: 6.2625rem 0 3.75rem 0;
         padding: 7rem 0 0 0;
     }
 }

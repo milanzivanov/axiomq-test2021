@@ -17,15 +17,14 @@ ul.desktop-nav__box {
         list-style: none;
         display: flex;
         align-items: center;
-        padding-right: 2em;
+        padding-right: 1rem;
 
-        
         a {
             font-family: 'Manrope' sans-serif;
-            font-size: 0.9rem;
+            font-size: 0.875rem;
             display: flex;
             text-decoration: none;
-            padding-right: .3em;
+            padding-right: .2rem;
             text-transform: uppercase;
             color: $link-color;
             font-weight: 400;

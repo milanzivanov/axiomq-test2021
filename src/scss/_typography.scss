@@ -70,10 +70,6 @@ h4.heading-h4-18 {
 }
 
 @include breakpoint(for-desktop-up) {
-
-}
-
-@include breakpoint(for-desktop-up) {
     .paragraph-18 {
         font-size: 1.3125rem;
     }

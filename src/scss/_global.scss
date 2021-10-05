@@ -83,35 +83,48 @@ select {
 .text-center {
   text-align: center;
 }
-.text-left {
+.paragraph-align {
   text-align: left;
 }
 
-@include breakpoint(large-desktop) {
-  .text-left {
+@include breakpoint(for-desktop-up) {
+  .paragraph-align {
     text-align: center;
   }
 }
-
 
 .color-white {
   color: $white;
 }
 
-// bottom padding spasing
+// bottom padding spacing
 .padding-bot-20 {
   padding-bottom: 1.25rem;
 }
 
+@include breakpoint(tablet) {
+  .padding-bot-20 {
+    padding-bottom: 2.4375rem;
+  }
+}
+
 @include breakpoint(for-desktop-up) {
   .padding-bot-20 {
-    padding-bottom: 2.4375rem;;
+    padding-bottom: 3.75rem;
   }
 }
 
 .padding-bot-30 {
   padding-bottom: 1.875rem;
 }
+
+@include breakpoint(for-desktop-up) {
+  .padding-bot-30 {
+    padding-bottom: 2.125rem;
+  }
+}
+
+
 
 @include breakpoint(large-desktop) {
   .padding-bot-30 {
@@ -139,8 +152,8 @@ select {
   .margin-bot-30 {
     margin-bottom: 3.5rem;
   }
-
 }
+
 .margin-bot-40 {
   margin-bottom: 2.5rem;
 }
