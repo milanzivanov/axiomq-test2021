@@ -23,6 +23,11 @@
     }
 }
 
+// testing
+.slick-slide[aria-hidden="true"] {
+    opacity: 0;
+}
+
 .slick-dots li button:before {
     font-size: 15px;
 }

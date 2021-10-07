@@ -25,6 +25,7 @@ jQuery(function() {
 
     // slick slider 
     $('.slick-slider').slick({
+        centerMode: true,
         dots: false,
         arrows: false,
         focusOnSelect: true,
