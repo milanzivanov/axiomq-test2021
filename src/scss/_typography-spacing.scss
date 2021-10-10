@@ -91,6 +91,22 @@ h4.heading-h4-18 {
     color: $primary-blue;
 }
 
+// padding left right
+.padding-left-right {
+    padding: 0 1rem;
+}
+
+@include breakpoint(tablet) {
+    .padding-left-right {
+        padding: 0 2rem;
+    }
+}
+@include breakpoint(for-desktop-up) {
+    .padding-left-right {
+        padding: 0;
+    }
+}
+
 /////////////////////////////
 // bottom padding spacing
 .padding-bot-20 {

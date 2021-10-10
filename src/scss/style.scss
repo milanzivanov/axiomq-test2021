@@ -15,21 +15,15 @@ body {
 
 //////////////
 // main style
-.container {
+.landing-container {
     position: relative;
-    padding: 0 1rem;
     z-index: 10;
     background-color: $white;
 }
 
 @include breakpoint(tablet) {
-    .container {
-        padding: 0 2rem;
-    }
-}
-@include breakpoint(for-desktop-up) {
-    .container {
-        padding: 0;
+    .landing-container {
+        padding: 0 1rem;
     }
 }
 
@@ -145,6 +139,7 @@ h1.heading-h1::first-line {
     align-items: center;
     text-align: center;
     font-family: 'Manrope', sans-serif;
+    margin: 0 1rem;
 }
 @include breakpoint(for-desktop-up) {
     .wondering-box {
@@ -154,12 +149,12 @@ h1.heading-h1::first-line {
 
 .wondering-box__steps {
     text-align: left;
+    border-bottom: 1px solid $border-color;
 }
 
 @include breakpoint(for-desktop-up) {
     .wondering-box__steps {
         display: flex;
-        border-bottom: 1px solid $border-color;
     }
 }
 
@@ -215,7 +210,8 @@ h1.heading-h1::first-line {
 // Tools part
 .tools-box {
     border-bottom: 1px solid $border-color;
-    padding-bottom: 1.5rem;
+    padding: 1.5rem 0;
+    margin: 0 1rem;
 }
 
 .tools-box__flex {
